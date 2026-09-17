@@ -1,0 +1,73 @@
+:root {
+  color: #17213b;
+  background: #f4f7fb;
+  font-family:
+    Inter, "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.container {
+  width: min(960px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.hero {
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  color: white;
+  background: linear-gradient(135deg, #5034a8, #176b87);
+  box-shadow: 0 1rem 2.5rem rgb(23 33 59 / 16%);
+}
+
+.hero h1 {
+  margin: 0.2rem 0 0.75rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.event-card {
+  padding: 1.5rem;
+  border: 1px solid #dbe2ef;
+  border-radius: 1rem;
+  background: white;
+}
+
+.event-card h3 {
+  margin-top: 0;
+}
+
+.event-card time {
+  color: #526079;
+}
+
+.availability {
+  margin-bottom: 0;
+  color: #5034a8;
+  font-weight: 700;
+}
